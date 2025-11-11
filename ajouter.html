@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ajouter un matériel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0a0f2c, #1e2a78);
+      color: #e0e0e0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 60px auto;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+      backdrop-filter: blur(6px);
+    }
+
+    h2 {
+      text-align: center;
+      color: #00ffe1;
+      text-shadow: 0 0 8px #00ffe1;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: white;
+      box-shadow: inset 0 0 5px #00ffe1;
+    }
+
+    input:focus {
+      outline: none;
+      box-shadow: 0 0 10px #00ffe1;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #00ffe1;
+      color: #0a0f2c;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #00ffe1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>➕ Ajouter un matériel</h2>
+    <form>
+      <label>Nom du matériel</label>
+      <input type="text" placeholder="Ex: Arduino Uno" required />
+
+      <label>Référence</label>
+      <input type="text" placeholder="Ex: ARD-UNO-R3" />
+
+      <label>Prix (TND)</label>
+      <input type="number" placeholder="Ex: 120" />
+
+      <label>Quantité</label>
+      <input type="number" placeholder="Ex: 5" />
+
+      <label>Fournisseur</label>
+      <input type="text" placeholder="Ex: ElectroShop" />
+
+      <label>État</label>
+      <input type="text" placeholder="Ex: Neuf / Bon / À réparer" />
+
+      <label>Emplacement</label>
+      <input type="text" placeholder="Ex: Armoire 2" />
+
+      <label>Description</label>
+      <textarea placeholder="Ex: Carte de développement pour projets électroniques" rows="4" style="width: 100%; padding: 10px; margin-top: 5px; border-radius: 8px; border: none; background-color: rgba(255, 255, 255, 0.1); color: white; box-shadow: inset 0 0 5px #00ffe1;"></textarea>
+
+      <label>Fonctionnalité</label>
+      <textarea type="text" placeholder="Ex: Contrôle de capteurs, communication série" rows="4" style="width: 100%; padding: 10px; margin-top: 5px; border-radius: 8px; border: none; background-color: rgba(255, 255, 255, 0.1); color: white; box-shadow: inset 0 0 5px #00ffe1;"></textarea>
+
+
+      <label>Image (URL)</label>
+      <input type="url" placeholder="Lien vers l'image" />
+
+      <button type="submit">Enregistrer</button>
+    </form>
+  </div>
+</body>
+</html>
